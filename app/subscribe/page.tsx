@@ -2,6 +2,12 @@ import React from 'react'
 import Banner from '@/components/Banner'
 import Step from '@/components/Step'
 import SubscriptionPlan from '@/components/SubscriptionPlan'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Create Your Plan - Coffeeroasters',
+    description: 'Coffee the way you wanted it to be. For coffee delivered tomorrow, or next week. For whatever brew method you use. For choice, for convenience, for quality.',
+}
 
 const Subscribe = () => {
     return (

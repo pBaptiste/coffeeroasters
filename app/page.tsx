@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import CallToAction from '@/components/CallToAction'
 import Collection from '@/components/Collection'
 import Benefits from '@/components/Benefits'
