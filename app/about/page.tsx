@@ -43,7 +43,7 @@ const About = () => {
             </section>
 
             <section className='mb-[120px] md:mb-[144px] xl:mb-[168px]'>
-                <div className='relative bg-darkGreyBlue w-[327px] md:w-[688px] xl:w-[1280px] rounded-[10px] -z-20'>
+                <div className='relative bg-[#2C343E] w-[327px] md:w-[688px] xl:w-[1280px] rounded-[10px] -z-20'>
                     <div className='absolute w-[279px] md:w-[573px] xl:w-[445px] h-[156px] md:h-[320px] xl:h-[474px] top-[-70px] md:top-[-170px] xl:top-[-80px] left-[50%] translate-x-[-50%] xl:left-auto xl:translate-x-0 xl:right-[85px]'>
                         <ResponsiveImage
                             imgSmSrc='/assets/about/mobile/image-quality.jpg'

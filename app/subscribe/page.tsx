@@ -26,7 +26,7 @@ const Subscribe = () => {
 
 
             <section className='mb-[111.03px]'>
-                <div className='rounded-[10px] bg-darkGreyBlue text-lightCream w-[375px] md:w-[768px] xl:w-[1280px] px-6 md:px-10 xl:pl-[85px] xl:pr-[150px] py-20 md:pt-[97px] md:pb-[70px] xl:py-[100px]'>
+                <div className='rounded-[10px] bg-[#2C343E] text-lightCream w-[375px] md:w-[768px] xl:w-[1280px] px-6 md:px-10 xl:pl-[85px] xl:pr-[150px] py-20 md:pt-[97px] md:pb-[70px] xl:py-[100px]'>
                     <div className='hidden md:flex items-center mb-[62px]'>
                         <div className='w-[31px] h-[31px] border-2 border-darkCyan rounded-full'></div>
                         <div className='w-[210px] xl:w-[350px] h-[2px] bg-paleOrange'></div>
