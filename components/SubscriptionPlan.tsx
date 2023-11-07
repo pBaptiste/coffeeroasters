@@ -135,7 +135,7 @@ const SubscriptionPlan = () => {
                                 <p className='sans-1 text-darkGreyBlue text-opacity-80 text-[.938rem] leading-[1.563rem] mb-6 md:mb-[47px]'>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. </p>
                                 <div className='flex items-center gap-[13px]'>
                                     <span className='hidden md:block text-darkGreyBlue text-[2rem] leading-[2.25rem] serif-1'>$14.00 / mo</span>
-                                    <Link href='/' className='px-[31px] md:flex md:justify-center pt-[15px] pb-4 bg-darkCyan hover:bg-[#66D2CF] transition-colors duration-300 text-lightCream text-[1.125rem] leading-[1.563rem] serif-1 rounded-md md:flex-1'>Checkout <span className='md:hidden'>- $14.00 / mo</span></Link>
+                                    <Link onClick={() => setIsModalOpen(false)} href='/' className='px-[31px] md:flex md:justify-center pt-[15px] pb-4 bg-darkCyan hover:bg-[#66D2CF] transition-colors duration-300 text-lightCream text-[1.125rem] leading-[1.563rem] serif-1 rounded-md md:flex-1'>Checkout <span className='md:hidden'>- $14.00 / mo</span></Link>
                                 </div>
 
                             </div>
