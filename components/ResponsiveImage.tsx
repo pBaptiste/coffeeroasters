@@ -7,9 +7,10 @@ type Props = {
     imgMdSrc: string;
     imgLgSrc: string;
     imgAlt: string;
+    priority?: boolean;
 }
 
-export const ResponsiveImage = ({ imgSmSrc, imgMdSrc, imgLgSrc, imgAlt }: Props) => {
+export const ResponsiveImage = ({ imgSmSrc, imgMdSrc, imgLgSrc, imgAlt, priority }: Props) => {
     const [windowWidth, setWindowWidth] = useState(0)
 
     useEffect(() => {
@@ -45,6 +46,7 @@ export const ResponsiveImage = ({ imgSmSrc, imgMdSrc, imgLgSrc, imgAlt }: Props)
             alt={imgAlt}
             fill
             className='absolute top-0 left-0 object-cover -z-10 rounded-[10px]'
+            priority={priority}
         />
     )
 }

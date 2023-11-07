@@ -15,7 +15,7 @@ const CollectionItem = ({ imgSrc, title, description }: Props) => {
             </div>
 
             <div className='flex flex-col items-center md:items-start xl:items-center w-[282px] xl:w-[245px] text-darkGreyBlue'>
-                <h3 className='text-center md:text-start xl:text-center serif-1 text-2xl leading-8 mb-4 md:mb-6'>{title}</h3>
+                <h2 className='text-center md:text-start xl:text-center serif-1 text-2xl leading-8 mb-4 md:mb-6'>{title}</h2>
                 <p className='text-center md:text-start xl:text-center sans-1 text-[.938rem] font-normal leading-[1.563rem]'>{description}</p>
             </div>
         </div>

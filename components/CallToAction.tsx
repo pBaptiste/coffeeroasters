@@ -1,40 +1,8 @@
-"use client"
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import ActionLink from '@/components/ActionLink'
-import Image from 'next/image'
+import { ResponsiveImage } from './ResponsiveImage'
 
 const CallToAction = () => {
-    const [windowWidth, setWindowWidth] = useState(0)
-
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            setWindowWidth(window.innerWidth);
-        }
-
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth)
-        }
-
-        if (typeof window !== 'undefined') {
-            window.addEventListener('resize', handleResize);
-
-            return () => {
-                window.removeEventListener('resize', handleResize);
-            };
-        }
-
-    }, [windowWidth])
-
-    function imageLoader(src: string, width: number) {
-        if (width < 768) {
-            return `/assets/home/mobile/${src}`;
-        } else if (width < 1280) {
-            return `/assets/home/tablet/${src}`;
-        } else {
-            return `/assets/home/desktop/${src}`;
-        }
-    }
-
     return (
         <section className='mb-[120px] md:mb-[203px] xl:mb-[262px]'>
             <div className='relative flex flex-col items-center md:items-start justify-center w-[327px] h-[500px] md:w-[689px] md:h-[500px] xl:w-[1280px] xl:h-[600px] px-6 md:pl-[58px] rounded-[10px]'>
@@ -43,12 +11,11 @@ const CallToAction = () => {
                     coffees from our best roasters delivered directly to your door, at your schedule.</p>
                 <ActionLink text='Create your plan' link='/subscribe' />
 
-                <Image src={imageLoader('image-hero-coffeepress.jpg', windowWidth)}
-                    alt='coffee press'
-                    fill
-                    className='absolute top-0 left-0 object-cover -z-10 rounded-[10px]'
-                    placeholder="blur"
-                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/wAABgAB/5W08QAAAABJRU5ErkJggg==" />
+                <ResponsiveImage imgSmSrc='/assets/home/mobile/image-hero-coffeepress.jpg'
+                    imgMdSrc='/assets/home/tablet/image-hero-coffeepress.jpg'
+                    imgLgSrc='/assets/home/desktop/image-hero-coffeepress.jpg'
+                    imgAlt='coffee press'
+                    priority={true} />
             </div>
 
         </section>
